@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programming\\Rust\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\front_of_house\\hosting.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules_control_statement_privacy\\src\\front_of_house\\hosting.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules_control_statement_privacy\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\front_of_house\\mod.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules_control_statement_privacy\\src\\front_of_house\\mod.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\lib.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules_control_statement_privacy\\src\\lib.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.rs",
+              "DocumentMoniker": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\main.rs",
+              "RelativeDocumentMoniker": "modules_control_statement_privacy\\src\\main.rs",
+              "ToolTip": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\main.rs",
+              "RelativeToolTip": "modules_control_statement_privacy\\src\\main.rs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAowAcAAAAsAAAA",
+              "Icon": "cb4a8fc6-efe7-424a-b611-23adf22b568e.000030|",
+              "WhenOpened": "2024-04-11T21:37:38.35Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mod.rs",
+              "DocumentMoniker": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\front_of_house\\mod.rs",
+              "RelativeDocumentMoniker": "modules_control_statement_privacy\\src\\front_of_house\\mod.rs",
+              "ToolTip": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\front_of_house\\mod.rs",
+              "RelativeToolTip": "modules_control_statement_privacy\\src\\front_of_house\\mod.rs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "Icon": "cb4a8fc6-efe7-424a-b611-23adf22b568e.000030|",
+              "WhenOpened": "2024-04-14T22:05:18.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "lib.rs",
+              "DocumentMoniker": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\lib.rs",
+              "RelativeDocumentMoniker": "modules_control_statement_privacy\\src\\lib.rs",
+              "ToolTip": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\lib.rs",
+              "RelativeToolTip": "modules_control_statement_privacy\\src\\lib.rs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "cb4a8fc6-efe7-424a-b611-23adf22b568e.000030|",
+              "WhenOpened": "2024-04-13T21:36:22.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "hosting.rs",
+              "DocumentMoniker": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\front_of_house\\hosting.rs",
+              "RelativeDocumentMoniker": "modules_control_statement_privacy\\src\\front_of_house\\hosting.rs",
+              "ToolTip": "C:\\Programming\\Rust\\modules_control_statement_privacy\\src\\front_of_house\\hosting.rs",
+              "RelativeToolTip": "modules_control_statement_privacy\\src\\front_of_house\\hosting.rs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "cb4a8fc6-efe7-424a-b611-23adf22b568e.000030|",
+              "WhenOpened": "2024-04-14T21:58:30.269Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
