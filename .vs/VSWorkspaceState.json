@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\modules_control_statement_privacy",
+    "\\HashMaps_Vectors",
+    "\\HashMaps_Vectors\\src",
     "\\modules_control_statement_privacy\\src",
     "\\modules_control_statement_privacy\\src\\front_of_house"
   ],
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
