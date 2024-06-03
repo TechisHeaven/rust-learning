@@ -20,10 +20,16 @@ fn stack_only_copy(){
 
 
 fn ownership_and_functions(){
-    let s = String::from("Hello String");
+    let mut s = String::from("Hello String");
+    let newString = &s;
 
+    println!("borrowed with referance {}", newString);
+    // s =  take_ownership(s);
 
-    take_ownership(s);
+    // or we can send data with refernce of that string 
+   take_ownership(&mut s);
+
+    println!("mutable takeback ownership string or with refernce value based on function &with this : {}", s);
 
     let n = 2;
 
@@ -57,8 +63,10 @@ fn ownership_and_functions(){
     }
 
 
-fn take_ownership(some_string: String){
+fn take_ownership(some_string: &mut String)-> &mut String{
+    some_string.push_str("Changed at little bit");
       println!("{}",some_string);
+      return some_string
 }
 
 

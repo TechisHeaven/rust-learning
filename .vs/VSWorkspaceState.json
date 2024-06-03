@@ -3,9 +3,10 @@
     "",
     "\\HashMaps_Vectors",
     "\\HashMaps_Vectors\\src",
-    "\\modules_control_statement_privacy\\src",
-    "\\modules_control_statement_privacy\\src\\front_of_house"
+    "\\ownership\\src",
+    "\\structs",
+    "\\structs\\src"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\structs\\src\\main.rs",
   "PreviewInSolutionExplorer": false
 }

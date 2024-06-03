@@ -1,11 +1,43 @@
 
 fn main() {
 
-     create_structs();
-     refacetoring_with_struct();
-     method_with_more_params();
-    method_structure();
+     //create_structs();
+     //refacetoring_with_struct();
+     //method_with_more_params();
+    //method_structure();
+
+   
+
+
+    let circle = Shape::Circle(40.0);
+    let square = Shape::Square(50.0);
+    let rectangle = Shape::Rectangle(40.0, 30.0);
+
+
+    let print =  calculate_shape(rectangle);
+    println!("{}", print);
+
+
 }
+
+
+fn calculate_shape(shape: Shape)-> f64 {
+    match shape {
+        //Shape::Circle(radius) => 3.14 * radius * radius,
+        Shape::Circle(radius) => std::f64::consts::PI * radius * radius,
+        Shape::Square(radius) => radius * radius,
+        Shape::Rectangle(lenght, width) => lenght * width,
+    }
+}
+
+ enum Shape {
+    Circle(f64),
+   Square(f64),
+   Rectangle(f64 , f64)
+}
+
+
+
 
     struct User{
     active: bool,

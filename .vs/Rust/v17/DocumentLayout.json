@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Programming\\Rust\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\HashMaps_Vectors\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HashMaps_Vectors\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\structs\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:structs\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Programming\\Rust\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Programming\\Rust\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001407|",
-              "WhenOpened": "2024-04-16T21:32:36.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "main.rs",
-              "DocumentMoniker": "C:\\Programming\\Rust\\HashMaps_Vectors\\src\\main.rs",
-              "RelativeDocumentMoniker": "HashMaps_Vectors\\src\\main.rs",
-              "ToolTip": "C:\\Programming\\Rust\\HashMaps_Vectors\\src\\main.rs",
-              "RelativeToolTip": "HashMaps_Vectors\\src\\main.rs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
+              "DocumentMoniker": "C:\\Programming\\Rust\\structs\\src\\main.rs",
+              "RelativeDocumentMoniker": "structs\\src\\main.rs",
+              "ToolTip": "C:\\Programming\\Rust\\structs\\src\\main.rs",
+              "RelativeToolTip": "structs\\src\\main.rs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "cb4a8fc6-efe7-424a-b611-23adf22b568e.000030|",
-              "WhenOpened": "2024-04-16T21:14:52.745Z",
+              "WhenOpened": "2024-06-03T21:02:33.373Z",
               "EditorCaption": ""
             }
           ]
