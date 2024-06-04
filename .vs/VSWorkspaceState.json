@@ -3,10 +3,8 @@
     "",
     "\\HashMaps_Vectors",
     "\\HashMaps_Vectors\\src",
-    "\\ownership\\src",
     "\\structs",
     "\\structs\\src"
   ],
-  "SelectedNode": "\\structs\\src\\main.rs",
   "PreviewInSolutionExplorer": false
 }
