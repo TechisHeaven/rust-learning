@@ -24,10 +24,13 @@
 // println!("{:?}, {:?}", action, item);
 // }
 
+use chrono::{Local, Utc};
+
 fn main() {
     let string = String::from("Hello world!");
     let result = find_first_index(string);
-
+    let now = Utc::now();
+    println!("Current Time in UTC is {}", now);
     match result {
         Some(index) => {
             println!("The Letter 's' Found at {} index", index);

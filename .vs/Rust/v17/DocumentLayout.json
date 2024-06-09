@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Programming\\Rust\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\structs\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:structs\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\Actix\\hello-world\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Actix\\hello-world\\src\\main.rs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\Rust\\Actix\\hello-world\\Cargo.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Actix\\hello-world\\Cargo.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cargo.toml",
+              "DocumentMoniker": "C:\\Programming\\Rust\\Actix\\hello-world\\Cargo.toml",
+              "RelativeDocumentMoniker": "Actix\\hello-world\\Cargo.toml",
+              "ToolTip": "C:\\Programming\\Rust\\Actix\\hello-world\\Cargo.toml",
+              "RelativeToolTip": "Actix\\hello-world\\Cargo.toml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-06-05T19:27:23.54Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.rs",
-              "DocumentMoniker": "C:\\Programming\\Rust\\structs\\src\\main.rs",
-              "RelativeDocumentMoniker": "structs\\src\\main.rs",
-              "ToolTip": "C:\\Programming\\Rust\\structs\\src\\main.rs",
-              "RelativeToolTip": "structs\\src\\main.rs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "DocumentMoniker": "C:\\Programming\\Rust\\Actix\\hello-world\\src\\main.rs",
+              "RelativeDocumentMoniker": "Actix\\hello-world\\src\\main.rs",
+              "ToolTip": "C:\\Programming\\Rust\\Actix\\hello-world\\src\\main.rs",
+              "RelativeToolTip": "Actix\\hello-world\\src\\main.rs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAbAAAA",
               "Icon": "cb4a8fc6-efe7-424a-b611-23adf22b568e.000030|",
-              "WhenOpened": "2024-06-03T21:02:33.373Z",
+              "WhenOpened": "2024-06-05T19:27:19.729Z",
               "EditorCaption": ""
             }
           ]
