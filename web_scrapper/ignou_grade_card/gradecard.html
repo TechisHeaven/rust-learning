@@ -1,0 +1,307 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	IGNOU Grade Card
+</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><link href="style.css?ver1" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="css/dropdown-menu.css" /><link rel="stylesheet" type="text/css" href="css/responsive.css" /><link href="css/datecss/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    
+    <script type='text/javascript'>
+        $(window).load(function () {
+            setAdminMessage();
+        });
+        function toggleAdminMessage() {
+            if ($.session.get("myAlertBoxStatus") == "closed") {
+                $.session.set("myAlertBoxStatus", "opened");
+                $("#adminMessage, #ctl00_adminMessage").removeClass("closed");
+                $("#adminMessage, #ctl00_adminMessage").addClass("opened");
+            } else {
+                $.session.set("myAlertBoxStatus", "closed");
+                $("#adminMessage, #ctl00_adminMessage").removeClass("opened");
+                $("#adminMessage, #ctl00_adminMessage").addClass("closed");
+            }
+        }
+        function setAdminMessage() {
+            if ($.session.get("myAlertBoxStatus") == "closed") {
+                $("#adminMessage, #ctl00_adminMessage").removeClass("opened");
+                $("#adminMessage, #ctl00_adminMessage").addClass("closed");
+            } else {
+                $("#adminMessage, #ctl00_adminMessage").removeClass("closed");
+                $("#adminMessage, #ctl00_adminMessage").addClass("opened");
+            }
+        }
+    </script>
+    <script type="text/ecmascript">
+        $(document).ready(function ()
+        { $("input").attr("autocomplete", "off"); });
+    </script>
+    <script type="text/javascript">
+        function myFunction() {
+            var d = new Date();
+            var n = d.getFullYear();
+            document.getElementById("year").innerHTML = n;
+        }
+    </script>
+    
+    
+    <style media="print" type="text/css">
+        html, body, td
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #RegistrationPreview h1
+        {
+            text-align: right;
+            font-weight: normal;
+            font-size: 18px;
+            border-bottom: 2px solid #000;
+        }
+        #logoPrint
+        {
+            display: block !important;
+            float: left;
+            width: 140px;
+        }
+        #header, #summary, legend, .buttonwrap, #btnPrint, #footer
+        {
+            display: none;
+        }
+        h3, h1
+        {
+            clear: both;
+        }
+        #colAB
+        {
+            float: none;
+            width: 100%;
+        }
+        .borderB
+        {
+            border: 0px 0px 1px !important;
+            border-top: none;
+        }
+    </style>
+</head>
+<body onload="window.history.forward();">
+    <div id="lightboxcontent" style="display: none;">
+        <a href="#" title="Close" id="hidelightbox" class="fright"><b>X</b></a><iframe id="lightboxwindow"
+            name="lightboxwindow" src="" frameborder="0" height="100%" width="100%"></iframe>
+    </div>
+    <div id="lightboxbg" onclick="hidecoursedetail();" style="display: none;">
+    </div>
+    <div id="wrapper">
+        <form name="aspnetForm" method="post" action="./view_gradecard.aspx?eno=2251090428&amp;prog=BCA&amp;type=1" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8FFBFE56" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALz+86Vf20H9FcxvkmyBjs+sOzre7Uw3bFwx/ZP2Xn9SeDRSmlpN2+auua4zoDj6WRKlzLQ" />
+</div>
+        <div id="header">
+            
+
+
+            <div id="title_head" align="center">
+                    <table width="100%"> <tr>
+            <td width="13%" align="center" valign="middle"><a href="http://ignou.ac.in/" target="_blank"> <img src="images/LOGO1.png" class="logo" alt="IGNOU Grade Card" width="140" /></a></td>
+            <td width="74%" align="center" style="margin: 10px"> <br /><span id="ctl00_lbl_title" style="color:White;font-family:Times New Roman;font-size:35px;font-weight:bold;">INDIRA GANDHI NATIONAL OPEN UNIVERSITY</span>
+                <br /><span id="ctl00_lbl_title1" style="color:White;font-family:Times New Roman;font-size:25px;font-weight:bold;">GRADE CARD/ MARKS SHEET</span>
+                <br/>
+                <div style="text-align: center; margin: 10px">
+                    <input type="submit" name="ctl00$btnlogout" value="Logout" id="ctl00_btnlogout" style="color:Black;background-color:#B8CFE7;font-family:Times New Roman;font-size:16px;font-weight:bold;height:30px;width:90px;" /></div>
+
+                </td>
+            <td width="13%" align="center" valign="middle"> <img src="images/naac_TRANS.PNG" 
+                    class="logo" alt="IGNOU Grade Card" width="180" /></td>
+            </tr></table>
+            </div>
+
+
+        </div>
+        
+        <div id="container" style="width: 100%">
+            
+    <div id="wrapper">
+        <div id="container">
+            <div id="colAB" align="center">
+                
+                <div id="ctl00_ContentPlaceHolder1_RegistrationPreview" style="display: block">
+                    <center>
+                        <h3>
+                            <span id="ctl00_ContentPlaceHolder1_lblapplicationform" style="font-family:helvetica;"></span></h3>
+                    </center>
+                    <table width="85%" align="center" style="border: thin solid #000000">
+                        <tr>
+                            <td colspan="1">
+                                <table align="center" width="100%" style="border-bottom-style: solid; border-width: thin;
+                                    border-color: #000000">
+                                    <tr>
+                                        <td align="center">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="10%">
+                                                        <center>
+                                                            <img src="Images/ignou_logo2.PNG" id="Img2" alt="" width="130" /></center>
+                                                    </td>
+                                                    <td width="80%" align="center">
+                                                        <span id="ctl00_ContentPlaceHolder1_lbl_regNo" style="color:#0033CC;font-size:X-Large;font-weight:bold;">INDIRA GANDHI NATIONAL OPEN UNIVERSITY</span>
+                                                        <span id="ctl00_ContentPlaceHolder1_lblsm" style="font-size:Medium;font-weight:bold;"><br/><br/> Grade Card Status as on </span>
+                                                        <span id="ctl00_ContentPlaceHolder1_lblgcasondt" style="font-size:Medium;font-weight:bold;">12-06-2024</span>
+                                                        <span id="ctl00_ContentPlaceHolder1_lblcurr_date" style="color:#3333CC;font-size:Small;font-weight:bold;"><br/><br/>Current Date: 17/06/2024 01:19:12</span>
+                                                        <span id="ctl00_ContentPlaceHolder1_Label1" style="color:#CC0000;font-size:Small;font-weight:bold;"><br/><br/> (For Information Only)</span>
+                                                    </td>
+                                                    <td width="10%">
+                                                        <center>
+                                                            <img src="Images/naac.PNG" id="Img3" alt="" width="110px" /></center>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" style="border-bottom: 0px solid #000;" valign="middle">
+                                            <h3>
+                                                The Status is indicative only & cannot be used as a substitute for the final grade
+                                                card. The Final Grade Card will be issued after completion of the Programme on updation
+                                                of all prescribed components.</h3>
+                                        </td>
+                                        <td style="border-bottom: 0px solid #000; text-align: right;">
+                                            <div class="fRight">
+                                                <a href="">
+                                                    <img src="Images/icon_print.gif" title="Print Form" onclick="window.print();" alt="" /></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <table width="100%" bgcolor="#9CAAC1" style="font-size: medium">
+                                    
+                                    <tr>
+                                        <td width="2%">
+                                        </td>
+                                        <td width="15%" style="text-align: right;">
+                                            <span id="ctl00_ContentPlaceHolder1_lblEnr" style="color:#0033CC;font-weight:bold;">Enrolment No:</span>
+                                        </td>
+                                        <td width="15%" style="text-align: left;">
+                                            <span id="ctl00_ContentPlaceHolder1_lblDispEnrolno" style="font-weight:bold;">2251090428</span>
+                                        </td>
+                                        <td width="15%" style="text-align: right;">
+                                            <span id="ctl00_ContentPlaceHolder1_lblname" style="color:#0033CC;font-weight:bold;">Name:</span>
+                                        </td>
+                                        <td width="20%" style="text-align: left;">
+                                            <span id="ctl00_ContentPlaceHolder1_lblDispname" style="font-weight:bold;">HIMANSHU</span>
+                                        </td>
+                                        <td width="15%" style="text-align: right;">
+                                            <span id="ctl00_ContentPlaceHolder1_lblProgCode" style="color:#0033CC;font-weight:bold;">Programme Code:</span>
+                                        </td>
+                                        <td width="15%" style="text-align: left;">
+                                            <span id="ctl00_ContentPlaceHolder1_lblDispProgCode" style="font-weight:bold;">BCA</span>
+                                        </td>
+                                        <td width="2%">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+	<table cellspacing="0" cellpadding="8" align="Center" border="0" id="ctl00_ContentPlaceHolder1_gvDetail" style="color:#333333;border-width:2px;border-style:solid;font-family:Arial;width:100%;border-collapse:collapse;">
+		<tr align="center" valign="top" style="color:White;background-color:#0F5092;font-size:Medium;font-weight:bold;">
+			<th scope="col">COURSE</th><th scope="col">Asgn1</th><th scope="col">LAB1</th><th scope="col">LAB2</th><th scope="col">LAB3</th><th scope="col">LAB4</th><th scope="col">TERM END THEORY</th><th scope="col">TERM END PRACTICAL</th><th scope="col">STATUS</th>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>BCS011</td><td>66</td><td>-</td><td>-</td><td>-</td><td>-</td><td>40</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>BCS012</td><td>68</td><td>-</td><td>-</td><td>-</td><td>-</td><td>22</td><td>-</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>BCS031</td><td>69</td><td>-</td><td>-</td><td>-</td><td>-</td><td>60</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>BCSL013</td><td>75</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>60</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>BCSL021</td><td>72</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>46</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>BCSL022</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>40</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>BCSL032</td><td>74</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>76</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>BCSL033</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>96</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>BCSL034</td><td>78</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>76</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>ECO01</td><td>72</td><td>-</td><td>-</td><td>-</td><td>-</td><td>36</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>ECO02</td><td>50</td><td>-</td><td>-</td><td>-</td><td>-</td><td>42</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>FEG02</td><td>75</td><td>-</td><td>-</td><td>-</td><td>-</td><td>56</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>MCS011</td><td>71</td><td>-</td><td>-</td><td>-</td><td>-</td><td>53</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>MCS012</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>5</td><td>-</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>MCS013</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>20</td><td>-</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>MCS014</td><td>68</td><td>-</td><td>-</td><td>-</td><td>-</td><td>30</td><td>-</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>MCS015</td><td>57</td><td>-</td><td>-</td><td>-</td><td>-</td><td>26</td><td>-</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:White;border-color:#FFCCFF;font-size:Medium;font-weight:normal;">
+			<td>MCS021</td><td>68</td><td>-</td><td>-</td><td>-</td><td>-</td><td>35</td><td>-</td><td>NOT COMPLETED</td>
+		</tr><tr align="center" valign="middle" style="background-color:#EFF3FB;font-size:Medium;font-weight:normal;">
+			<td>MCS023</td><td>66</td><td>-</td><td>-</td><td>-</td><td>-</td><td>69</td><td>-</td><td>COMPLETED</td>
+		</tr><tr align="center" style="color:White;background-color:#0F5092;font-weight:bold;">
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>
+                                    Not withstanding the result published/declared, any case of UFM(unfair means) if
+                                    found will make such result null and void.</h3>
+                                <br />
+                                <br />
+                                <span id="ctl00_ContentPlaceHolder1_lblcoursedtl2"></span>
+                                <span id="ctl00_ContentPlaceHolder1_lblcoursedtl"><b><u>Note:- Assignment 4 and TE Practical do not apply to all the courses.</b></u></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font color="red"><b>Disclaimer: This electronically generated information does not
+                                        have any legal validity</b></font></center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+    </div>
+
+        </div>
+        </form>
+    </div>
+    
+
+    <div id="footer" style="width: 100%; background-color: #0F5092; position:fixed;left:0; bottom:0; color:#fff; z-index:10;" >
+        <table width="100%"; "  >
+            <tr>
+                <td style="text-align:left" ><label class="Header"  style="font-size:large;">       Indira Gandhi National Open University. All Rights Reserved.</label>
+                </td>
+               <td style="text-align:right; "><label  class="Header"  style="font-size:large;">  Powered By: Software Development Cell, Computer Division. &nbsp; &nbsp;&nbsp;&nbsp; </label>
+                </td>
+            </tr>          </table>    </div>
+</body>
+</html>
