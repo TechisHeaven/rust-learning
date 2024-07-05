@@ -9,5 +9,5 @@ MiniGrep Command Line Arguments Tool for string filtering, sorting and other fun
 Go to the project directory
 
 ```bash
-  cargo run -- argument_value
+  cargo run -- argument_value src/poem.txt
 ```
