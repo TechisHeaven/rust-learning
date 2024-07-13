@@ -1,6 +1,5 @@
+use minigrep::Config;
 use std::env;
-use std::error::Error;
-use std::fs;
 use std::process;
 
 fn main() {
@@ -15,23 +14,10 @@ fn main() {
     println!("Arguments: {:?}", config.value);
     println!("File Path :{:?}", config.file_path);
     // will check if returns an error this will catch in if statement
-    if let Err(e) = run(config) {
+    if let Err(e) = minigrep::run(config) {
         println!("Application Error: {e}");
         process::exit(1);
     }
-}
-
-fn run(config: Config) -> Result<(), Box<dyn Error>> {
-    let contents = fs::read_to_string(config.file_path)?;
-
-    println!("with text:\n {:?}", contents);
-
-    Ok(())
-}
-
-struct Config {
-    value: String,
-    file_path: String,
 }
 
 // fn parse_arguments(args: &[String]) -> Config {
@@ -58,15 +44,3 @@ struct Config {
 //         }
 //     }
 // }
-
-impl Config {
-    fn build(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 3 {
-            return Err("not enought arguments");
-        }
-        let value = args[1].clone();
-        let file_path = args[2].clone();
-
-        Ok(Config { value, file_path })
-    }
-}
