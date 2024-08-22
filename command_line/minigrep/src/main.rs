@@ -7,7 +7,7 @@ fn main() {
     // let config = parse_arguments(&args);
     // let config = Config::new(&args);
     let config = Config::build(&args).unwrap_or_else(|err| {
-        println!("Problem parsing arguments: {err}");
+        eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });
 
@@ -15,7 +15,7 @@ fn main() {
     println!("File Path :{:?}", config.file_path);
     // will check if returns an error this will catch in if statement
     if let Err(e) = minigrep::run(config) {
-        println!("Application Error: {e}");
+        eprintln!("Application Error: {e}");
         process::exit(1);
     }
 }
